@@ -1,0 +1,28 @@
+{
+  "name": "laravel-elixir-behat",
+  "version": "0.0.1",
+  "description": "Laravel Elixir wrapper around Behat Gulp task.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "gulp",
+    "laravel",
+    "elixir",
+    "testing",
+    "behat"
+  ],
+  "author": "Mike Erickson",
+  "license": "MIT",
+  "homepage": "https://github.com/JeffreyWay/laravel-elixir-codeception",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JeffreyWay/laravel-elixir-codeception"
+  },
+  "dependencies": {
+    "gulp-behat": "^0.4.3",
+    "gulp-notify": "^2.0.0",
+    "underscore": "^1.7.0"
+  }
+}
