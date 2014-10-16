@@ -12,7 +12,7 @@ elixir(function(mix) {
 });
 ```
 
-This will scan your `./tests/` directory, as well as any PHP classes in your 'app' folder for changes, and trigger your Codeception suite.
+This will scan your `./tests/` directory, as well as any PHP classes in your 'app' folder for changes, and trigger your Behat suite.
 
 ---
 
@@ -20,7 +20,7 @@ You may pass two arguments to the `behat()` method.
 
 ### baseDir
 
-Defaulting to './tests', this argument specifies the root directory to search for Codeception-specific tests.
+Defaulting to './tests', this argument specifies the root directory to search for Behat-specific tests.
 
 ### options
 
