@@ -19,7 +19,7 @@ elixir.extend('behat', function(baseDir, options) {
 
     baseDir = baseDir || 'tests';
     options = _.extend({
-        clear: true, notify: true
+        clear: false, notify: true
     }, options);
 
     gulp.task('behat', function() {
@@ -40,7 +40,9 @@ elixir.extend('behat', function(baseDir, options) {
     this.queueTask('behat');
 
     this.registerWatcher('behat', [
-        baseDir + '/**/*+(Test|Cept|Cest).php',
+        baseDir + '/**/*+Context.php',
+        baseDir + '/**/*.feature',
+        'resources/**/*.php',
         'app/**/*.php'
     ], 'tdd');
 
