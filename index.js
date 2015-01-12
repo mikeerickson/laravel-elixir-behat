@@ -17,32 +17,25 @@ var elixir   = require('laravel-elixir'),
 
 elixir.extend('behat', function(baseDir, options) {
 
-    baseDir = baseDir || 'tests';
-    options = _.extend({
-        clear: true, notify: true
-    }, options);
+    baseDir = baseDir || 'tests/features';
+    options = _.extend( { notify: true } , options);
 
     gulp.task('behat', function() {
        gulp.src('behat.yml')
            .pipe(behat('', options))
            .on('error', notify.onError({
-               title: 'Red!',
+               title: 'Tests Failed',
                message: 'Your Behat tests failed!',
                icon: __dirname + '/../laravel-elixir/icons/fail.png'
            }))
            .pipe(notify({
-               title: 'Green!',
+               title: 'Tests Passed',
                message: 'Your Behat tests passed!',
                icon: __dirname + '/../laravel-elixir/icons/pass.png'
            }));
     });
 
     this.queueTask('behat');
-
-    this.registerWatcher('behat', [
-        baseDir + '/**/*+(Test|Cept|Cest).php',
-        'app/**/*.php'
-    ], 'tdd');
 
 });
 

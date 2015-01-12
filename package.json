@@ -1,6 +1,6 @@
 {
   "name": "laravel-elixir-behat",
-  "version": "0.0.2",
+  "version": "0.0.5",
   "description": "Laravel Elixir wrapper around Behat Gulp task.",
   "main": "index.js",
   "scripts": {
@@ -24,5 +24,8 @@
     "gulp-behat": "^0.3.4",
     "gulp-notify": "^2.0.0",
     "underscore": "^1.7.0"
+  },
+  "bugs": {
+    "url": "https://github.com/mikeerickson/laravel-elixir-behat/issues"
   }
 }

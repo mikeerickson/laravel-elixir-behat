@@ -12,7 +12,7 @@ elixir(function(mix) {
 });
 ```
 
-This will scan your `./tests/` directory, as well as any PHP classes in your 'app' folder for changes, and trigger your Behat suite.
+This will scan your `./tests/features/` directory, as well as any PHP classes in your 'app' folder for changes, and trigger your Behat suite.
 
 ---
 
@@ -20,19 +20,41 @@ You may pass two arguments to the `behat()` method.
 
 ### baseDir
 
-Defaulting to './tests', this argument specifies the root directory to search for Behat-specific tests.
+Defaulting to './tests/features/', this argument specifies the root directory to search for Behat-specific tests.
+If you would like to change the default path, you can override the 'baseDir' path to point to your features directory
+
+```
+mix.behat('./features', { debug: true });
+```
 
 ### options
 
-If you need to pass any Behat-specific options, then you may pass an object as the second argument, like so:
+If you need to pass any Behat-specific options (see gulp-behat docuumentation for complete list of available options), then you may pass an object as the second argument, like so:
 
 ```
-mix.behat(null, { flags: '--report' });
+mix.behat(null, { debug: true });
 ```
 
-Or, maybe you only want to trigger your "functional" suite.
 
-```
-mix.behat(null, { testSuite: 'functional' });
-```
 
+## Changelog
+
+- 0.0.5 Changes 
+
+- 0.0.4 Updated readme, providing example for overriding 'baseDir' property
+
+- 0.0.3 Minor tweaks, created npm package
+    - Changed 'clear' flag to default to 'false' as it is not supported on all systems
+    
+- 0.0.2 Initial Release
+    - First public release
+    
+## Credits
+
+laravel-elixir-behat written by Mike Erickson
+
+E-Mail: [codedungeon@gmail.com](mailto:codedungeon@gmail.com)
+
+Twitter: [@codedungeon](http://twitter.com/codedungeon)
+
+Website: [codedungeon.org](http://codedungeon.org)
