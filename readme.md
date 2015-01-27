@@ -43,8 +43,11 @@ mix.behat(null, { debug: true });
 
 ## Changelog
 
-- 0.0.5 Changes 
+- 0.0.6 Changes 
   - Fixed issues related to using Behat under watch task
+  
+- 0.0.5 Changes 
+  - Small refactors
 
 - 0.0.4 Updated readme, providing example for overriding 'baseDir' property
 

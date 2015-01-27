@@ -1,0 +1,112 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@2.0.2
+3 info using node@v0.10.32
+4 verbose publish [ '.' ]
+5 verbose cache add [ '.', null ]
+6 verbose cache add spec="." args=[".",null]
+7 verbose parsed spec { raw: '.',
+7 verbose parsed spec   scope: null,
+7 verbose parsed spec   name: null,
+7 verbose parsed spec   rawSpec: '.',
+7 verbose parsed spec   spec: '/Users/mikee/Documents/Projects/laravel-elixir-behat',
+7 verbose parsed spec   type: 'local' }
+8 verbose cache add local package /Users/mikee/Documents/Projects/laravel-elixir-behat
+9 silly lockFile 3a52ce78- .
+10 verbose lock . /Users/mikee/.npm/3a52ce78-.lock
+11 verbose tar pack [ '/Users/mikee/.npm/laravel-elixir-behat/0.0.5/package.tgz',
+11 verbose tar pack   '.' ]
+12 verbose tarball /Users/mikee/.npm/laravel-elixir-behat/0.0.5/package.tgz
+13 verbose folder .
+14 info prepublish laravel-elixir-behat@0.0.5
+15 silly lockFile 1f1177db-tar tar://.
+16 verbose lock tar://. /Users/mikee/.npm/1f1177db-tar.lock
+17 silly lockFile ba6ee9da-l-elixir-behat-0-0-5-package-tgz tar:///Users/mikee/.npm/laravel-elixir-behat/0.0.5/package.tgz
+18 verbose lock tar:///Users/mikee/.npm/laravel-elixir-behat/0.0.5/package.tgz /Users/mikee/.npm/ba6ee9da-l-elixir-behat-0-0-5-package-tgz.lock
+19 silly lockFile 1f1177db-tar tar://.
+20 silly lockFile 1f1177db-tar tar://.
+21 silly lockFile ba6ee9da-l-elixir-behat-0-0-5-package-tgz tar:///Users/mikee/.npm/laravel-elixir-behat/0.0.5/package.tgz
+22 silly lockFile ba6ee9da-l-elixir-behat-0-0-5-package-tgz tar:///Users/mikee/.npm/laravel-elixir-behat/0.0.5/package.tgz
+23 silly lockFile 0cbcaef8-ravel-elixir-behat-0-0-5-package /Users/mikee/.npm/laravel-elixir-behat/0.0.5/package
+24 verbose lock /Users/mikee/.npm/laravel-elixir-behat/0.0.5/package /Users/mikee/.npm/0cbcaef8-ravel-elixir-behat-0-0-5-package.lock
+25 silly lockFile 0cbcaef8-ravel-elixir-behat-0-0-5-package /Users/mikee/.npm/laravel-elixir-behat/0.0.5/package
+26 silly lockFile 0cbcaef8-ravel-elixir-behat-0-0-5-package /Users/mikee/.npm/laravel-elixir-behat/0.0.5/package
+27 silly lockFile 3a52ce78- .
+28 silly lockFile 3a52ce78- .
+29 silly publish { name: 'laravel-elixir-behat',
+29 silly publish   version: '0.0.5',
+29 silly publish   description: 'Laravel Elixir wrapper around Behat Gulp task.',
+29 silly publish   main: 'index.js',
+29 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+29 silly publish   keywords: [ 'gulp', 'laravel', 'elixir', 'testing', 'behat' ],
+29 silly publish   author: { name: 'Mike Erickson' },
+29 silly publish   license: 'MIT',
+29 silly publish   homepage: 'https://github.com/mikeerickson/laravel-elixir-behat',
+29 silly publish   repository:
+29 silly publish    { type: 'git',
+29 silly publish      url: 'https://github.com/mikeerickson/laravel-elixir-behat' },
+29 silly publish   dependencies:
+29 silly publish    { 'gulp-behat': '^0.3.4',
+29 silly publish      'gulp-notify': '^2.0.0',
+29 silly publish      underscore: '^1.7.0' },
+29 silly publish   bugs: { url: 'https://github.com/mikeerickson/laravel-elixir-behat/issues' },
+29 silly publish   readme: '## Usage\n\nThis is a simple Behat wrapper around Laravel Elixir. Add it to your Elixir-enhanced Gulpfile, like so:\n\n```\nvar elixir = require(\'laravel-elixir\');\n\nrequire(\'laravel-elixir-behat\');\n\nelixir(function(mix) {\n   mix.behat();\n});\n```\n\nThis will scan your `./tests/features/` directory, as well as any PHP classes in your \'app\' folder for changes, and trigger your Behat suite.\n\nNote:  If you want your tests to execute upon file change, use the `gulp tdd` task \n\n$ gulp tdd\n\n\n---\n\nYou may pass two arguments to the `behat()` method.\n\n### baseDir\n\nDefaulting to \'./tests/features/\', this argument specifies the root directory to search for Behat-specific tests.\nIf you would like to change the default path, you can override the \'baseDir\' path to point to your features directory\n\n```\nmix.behat(\'./features\', { debug: true });\n```\n\n### options\n\nIf you need to pass any Behat-specific options (see gulp-behat docuumentation for complete list of available options), then you may pass an object as the second argument, like so:\n\n```\nmix.behat(null, { debug: true });\n```\n\n\n## Changelog\n\n- 0.0.5 Changes \n  - Fixed issues related to using Behat under watch task\n\n- 0.0.4 Updated readme, providing example for overriding \'baseDir\' property\n\n- 0.0.3 Minor tweaks, created npm package\n    - Changed \'clear\' flag to default to \'false\' as it is not supported on all systems\n    \n- 0.0.2 Initial Release\n    - First public release\n    \n## Credits\n\nlaravel-elixir-behat written by Mike Erickson\n\nE-Mail: [codedungeon@gmail.com](mailto:codedungeon@gmail.com)\n\nTwitter: [@codedungeon](http://twitter.com/codedungeon)\n\nWebsite: [codedungeon.org](http://codedungeon.org)\n',
+29 silly publish   readmeFilename: 'readme.md',
+29 silly publish   gitHead: '5b4f9798bda7d0bf708f02b75e086b49ec61b565',
+29 silly publish   _id: 'laravel-elixir-behat@0.0.5',
+29 silly publish   _shasum: '0b457766786be7a1383c0a3e17d64053e5ddbb34',
+29 silly publish   _from: '.' }
+30 verbose mapToRegistry name laravel-elixir-behat
+31 verbose mapToRegistry uri https://registry.npmjs.org/laravel-elixir-behat
+32 verbose publish registryBase https://registry.npmjs.org/
+33 verbose request on initialization, where is /laravel-elixir-behat
+34 verbose request after pass 1, where is /laravel-elixir-behat
+35 verbose request url raw /laravel-elixir-behat
+36 verbose request resolving registry [ 'https://registry.npmjs.org/', './laravel-elixir-behat' ]
+37 verbose request after pass 2, where is https://registry.npmjs.org/laravel-elixir-behat
+38 verbose request sending authorization for write operation
+39 info attempt registry request try #1 at 10:35:22
+40 verbose request id 0b0af648bc8140f1
+41 http request PUT https://registry.npmjs.org/laravel-elixir-behat
+42 http 403 https://registry.npmjs.org/laravel-elixir-behat
+43 verbose headers { date: 'Tue, 27 Jan 2015 18:35:22 GMT',
+43 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+43 verbose headers   'content-type': 'application/json',
+43 verbose headers   'cache-control': 'max-age=60',
+43 verbose headers   'content-length': '4676',
+43 verbose headers   'accept-ranges': 'bytes',
+43 verbose headers   via: '1.1 varnish',
+43 verbose headers   'x-served-by': 'cache-lax1433-LAX',
+43 verbose headers   'x-cache': 'MISS',
+43 verbose headers   'x-cache-hits': '0',
+43 verbose headers   'x-timer': 'S1422383722.387936,VS0,VE49',
+43 verbose headers   'keep-alive': 'timeout=10, max=50',
+43 verbose headers   connection: 'Keep-Alive' }
+44 error publish Failed PUT 403
+45 verbose stack Error: forbidden cannot modify pre-existing version: 0.0.5
+45 verbose stack old={"name":"laravel-elixir-behat","version":"0.0.5","description":"Laravel Elixir wrapper around Behat Gulp task.","main":"index.js","scripts":{"test":"echo \"Error: no test specified\" && exit 1"},"keywords":["gulp","laravel","elixir","testing","behat"],"author":{"name":"Mike Erickson"},"license":"MIT","homepage":"https://github.com/mikeerickson/laravel-elixir-behat","repository":{"type":"git","url":"https://github.com/mikeerickson/laravel-elixir-behat"},"dependencies":{"gulp-behat":"^0.3.4","gulp-notify":"^2.0.0","underscore":"^1.7.0"},"bugs":{"url":"https://github.com/mikeerickson/laravel-elixir-behat/issues"},"gitHead":"d85248be02aa39aacc170015d503bd7c72f35b6b","_id":"laravel-elixir-behat@0.0.5","_shasum":"5d15a657eaf7ad542bbe682a99f3cfd49a6b8f40","_from":".","_npmVersion":"2.0.2","_nodeVersion":"0.10.32","_npmUser":{"name":"codedungeon","email":"codedungeon@gmail.com"},"maintainers":[{"name":"codedungeon","email":"codedungeon@gmail.com"}],"dist":{"shasum":"5d15a657eaf7ad542bbe682a99f3cfd49a6b8f40","tarball":"http://registry.npmjs.org/laravel-elixir-behat/-/laravel-elixir-behat-0.0.5.tgz"}}
+45 verbose stack new={"name":"laravel-elixir-behat","version":"0.0.5","description":"Laravel Elixir wrapper around Behat Gulp task.","main":"index.js","scripts":{"test":"echo \"Error: no test specified\" && exit 1"},"keywords":["gulp","laravel","elixir","testing","behat"],"author":{"name":"Mike Erickson"},"license":"MIT","homepage":"https://github.com/mikeerickson/laravel-elixir-behat","repository":{"type":"git","url":"https://github.com/mikeerickson/laravel-elixir-behat"},"dependencies":{"gulp-behat":"^0.3.4","gulp-notify":"^2.0.0","underscore":"^1.7.0"},"bugs":{"url":"https://github.com/mikeerickson/laravel-elixir-behat/issues"},"readme":"## Usage\u000a\u000aThis is a simple Behat wrapper around Laravel Elixir. Add it to your Elixir-enhanced Gulpfile, like so:\u000a\u000a```\u000avar elixir = require('laravel-elixir');\u000a\u000arequire('laravel-elixir-behat');\u000a\u000aelixir(function(mix) {\u000a   mix.behat();\u000a});\u000a```\u000a\u000aThis will scan your `./tests/features/` directory, as well as any PHP classes in your 'app' folder for changes, and trigger your Behat suite.\u000a\u000aNote:  If you want your tests to execute upon file change, use the `gulp tdd` task \u000a\u000a$ gulp tdd\u000a\u000a\u000a---\u000a\u000aYou may pass two arguments to the `behat()` method.\u000a\u000a### baseDir\u000a\u000aDefaulting to './tests/features/', this argument specifies the root directory to search for Behat-specific tests.\u000aIf you would like to change the default path, you can override the 'baseDir' path to point to your features directory\u000a\u000a```\u000amix.behat('./features', { debug: true });\u000a```\u000a\u000a### options\u000a\u000aIf you need to pass any Behat-specific options (see gulp-behat docuumentation for complete list of available options), then you may pass an object as the second argument, like so:\u000a\u000a```\u000amix.behat(null, { debug: true });\u000a```\u000a\u000a\u000a## Changelog\u000a\u000a- 0.0.5 Changes \u000a  - Fixed issues related to using Behat under watch task\u000a\u000a- 0.0.4 Updated readme, providing example for overriding 'baseDir' property\u000a\u000a- 0.0.3 Minor tweaks, created npm package\u000a    - Changed 'clear' flag to default to 'false' as it is not supported on all systems\u000a    \u000a- 0.0.2 Initial Release\u000a    - First public release\u000a    \u000a## Credits\u000a\u000alaravel-elixir-behat written by Mike Erickson\u000a\u000aE-Mail: [codedungeon@gmail.com](mailto:codedungeon@gmail.com)\u000a\u000aTwitter: [@codedungeon](http://twitter.com/codedungeon)\u000a\u000aWebsite: [codedungeon.org](http://codedungeon.org)\u000a","readmeFilename":"readme.md","gitHead":"5b4f9798bda7d0bf708f02b75e086b49ec61b565","_id":"laravel-elixir-behat@0.0.5","_shasum":"0b457766786be7a1383c0a3e17d64053e5ddbb34","_from":".","_npmVersion":"2.0.2","_nodeVersion":"0.10.32","_npmUser":{"name":"codedungeon","email":"codedungeon@gmail.com"},"maintainers":[{"name":"codedungeon","email":"codedungeon@gmail.com"}],"dist":{"shasum":"0b457766786be7a1383c0a3e17d64053e5ddbb34","tarball":"http://registry.npmjs.org/laravel-elixir-behat/-/laravel-elixir-behat-0.0.5.tgz"}}: laravel-elixir-behat
+45 verbose stack     at RegClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:260:14)
+45 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:197:65)
+45 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:237:22)
+45 verbose stack     at Request.emit (events.js:98:17)
+45 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1146:14)
+45 verbose stack     at Request.emit (events.js:117:20)
+45 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1097:12)
+45 verbose stack     at IncomingMessage.emit (events.js:117:20)
+45 verbose stack     at _stream_readable.js:943:16
+45 verbose stack     at process._tickCallback (node.js:419:13)
+46 verbose statusCode 403
+47 verbose pkgid laravel-elixir-behat
+48 verbose cwd /Users/mikee/Documents/Projects/laravel-elixir-behat
+49 error Darwin 14.0.0
+50 error argv "node" "/usr/local/bin/npm" "publish"
+51 error node v0.10.32
+52 error npm  v2.0.2
+53 error code E403
+54 error forbidden cannot modify pre-existing version: 0.0.5
+54 error old={"name":"laravel-elixir-behat","version":"0.0.5","description":"Laravel Elixir wrapper around Behat Gulp task.","main":"index.js","scripts":{"test":"echo \"Error: no test specified\" && exit 1"},"keywords":["gulp","laravel","elixir","testing","behat"],"author":{"name":"Mike Erickson"},"license":"MIT","homepage":"https://github.com/mikeerickson/laravel-elixir-behat","repository":{"type":"git","url":"https://github.com/mikeerickson/laravel-elixir-behat"},"dependencies":{"gulp-behat":"^0.3.4","gulp-notify":"^2.0.0","underscore":"^1.7.0"},"bugs":{"url":"https://github.com/mikeerickson/laravel-elixir-behat/issues"},"gitHead":"d85248be02aa39aacc170015d503bd7c72f35b6b","_id":"laravel-elixir-behat@0.0.5","_shasum":"5d15a657eaf7ad542bbe682a99f3cfd49a6b8f40","_from":".","_npmVersion":"2.0.2","_nodeVersion":"0.10.32","_npmUser":{"name":"codedungeon","email":"codedungeon@gmail.com"},"maintainers":[{"name":"codedungeon","email":"codedungeon@gmail.com"}],"dist":{"shasum":"5d15a657eaf7ad542bbe682a99f3cfd49a6b8f40","tarball":"http://registry.npmjs.org/laravel-elixir-behat/-/laravel-elixir-behat-0.0.5.tgz"}}
+54 error new={"name":"laravel-elixir-behat","version":"0.0.5","description":"Laravel Elixir wrapper around Behat Gulp task.","main":"index.js","scripts":{"test":"echo \"Error: no test specified\" && exit 1"},"keywords":["gulp","laravel","elixir","testing","behat"],"author":{"name":"Mike Erickson"},"license":"MIT","homepage":"https://github.com/mikeerickson/laravel-elixir-behat","repository":{"type":"git","url":"https://github.com/mikeerickson/laravel-elixir-behat"},"dependencies":{"gulp-behat":"^0.3.4","gulp-notify":"^2.0.0","underscore":"^1.7.0"},"bugs":{"url":"https://github.com/mikeerickson/laravel-elixir-behat/issues"},"readme":"## Usage\u000a\u000aThis is a simple Behat wrapper around Laravel Elixir. Add it to your Elixir-enhanced Gulpfile, like so:\u000a\u000a```\u000avar elixir = require('laravel-elixir');\u000a\u000arequire('laravel-elixir-behat');\u000a\u000aelixir(function(mix) {\u000a   mix.behat();\u000a});\u000a```\u000a\u000aThis will scan your `./tests/features/` directory, as well as any PHP classes in your 'app' folder for changes, and trigger your Behat suite.\u000a\u000aNote:  If you want your tests to execute upon file change, use the `gulp tdd` task \u000a\u000a$ gulp tdd\u000a\u000a\u000a---\u000a\u000aYou may pass two arguments to the `behat()` method.\u000a\u000a### baseDir\u000a\u000aDefaulting to './tests/features/', this argument specifies the root directory to search for Behat-specific tests.\u000aIf you would like to change the default path, you can override the 'baseDir' path to point to your features directory\u000a\u000a```\u000amix.behat('./features', { debug: true });\u000a```\u000a\u000a### options\u000a\u000aIf you need to pass any Behat-specific options (see gulp-behat docuumentation for complete list of available options), then you may pass an object as the second argument, like so:\u000a\u000a```\u000amix.behat(null, { debug: true });\u000a```\u000a\u000a\u000a## Changelog\u000a\u000a- 0.0.5 Changes \u000a  - Fixed issues related to using Behat under watch task\u000a\u000a- 0.0.4 Updated readme, providing example for overriding 'baseDir' property\u000a\u000a- 0.0.3 Minor tweaks, created npm package\u000a    - Changed 'clear' flag to default to 'false' as it is not supported on all systems\u000a    \u000a- 0.0.2 Initial Release\u000a    - First public release\u000a    \u000a## Credits\u000a\u000alaravel-elixir-behat written by Mike Erickson\u000a\u000aE-Mail: [codedungeon@gmail.com](mailto:codedungeon@gmail.com)\u000a\u000aTwitter: [@codedungeon](http://twitter.com/codedungeon)\u000a\u000aWebsite: [codedungeon.org](http://codedungeon.org)\u000a","readmeFilename":"readme.md","gitHead":"5b4f9798bda7d0bf708f02b75e086b49ec61b565","_id":"laravel-elixir-behat@0.0.5","_shasum":"0b457766786be7a1383c0a3e17d64053e5ddbb34","_from":".","_npmVersion":"2.0.2","_nodeVersion":"0.10.32","_npmUser":{"name":"codedungeon","email":"codedungeon@gmail.com"},"maintainers":[{"name":"codedungeon","email":"codedungeon@gmail.com"}],"dist":{"shasum":"0b457766786be7a1383c0a3e17d64053e5ddbb34","tarball":"http://registry.npmjs.org/laravel-elixir-behat/-/laravel-elixir-behat-0.0.5.tgz"}}: laravel-elixir-behat
+55 error If you need help, you may report this error at:
+55 error     <http://github.com/npm/npm/issues>
+56 verbose exit [ 1, true ]
