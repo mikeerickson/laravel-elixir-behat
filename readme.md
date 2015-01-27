@@ -14,6 +14,11 @@ elixir(function(mix) {
 
 This will scan your `./tests/features/` directory, as well as any PHP classes in your 'app' folder for changes, and trigger your Behat suite.
 
+Note:  If you want your tests to execute upon file change, use the `gulp tdd` task 
+
+$ gulp tdd
+
+
 ---
 
 You may pass two arguments to the `behat()` method.
@@ -36,10 +41,10 @@ mix.behat(null, { debug: true });
 ```
 
 
-
 ## Changelog
 
 - 0.0.5 Changes 
+  - Fixed issues related to using Behat under watch task
 
 - 0.0.4 Updated readme, providing example for overriding 'baseDir' property
 
