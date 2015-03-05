@@ -39,7 +39,8 @@ elixir.extend('behat', function(baseDir, options) {
 
 		this.registerWatcher('behat', [
 			baseDir + '/**/*.feature',
-			baseDir + '/**/*Context.php'
+			baseDir + '/**/*Context.php',
+            		'resources/**/*.blade.php'
 		], 'tdd');
 
 });
