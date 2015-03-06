@@ -40,14 +40,25 @@ If you need to pass any Behat-specific options (see gulp-behat docuumentation fo
 mix.behat(null, { debug: true });
 ```
 
+### watchList
+
+List of additional files to watch list when perform TDD command
+
+...
+
+var watchList = ['./resources/views/contacts/*.blade.php']; // watch contact blade files
+mix.behat(null, {}, watchList);
 
 ## Changelog
 
+- 0.0.7 Changes
+  - Added `watchList` parameter, providing option to extend default watch files
+  
 - 0.0.6 Changes 
   - Fixed issues related to using Behat under watch task
   
 - 0.0.5 Changes 
-  - Small refactors
+  - Small refactoring
 
 - 0.0.4 Updated readme, providing example for overriding 'baseDir' property
 
